@@ -3,7 +3,7 @@ package com.dev.admin.catalogo.domain.exceptions;
 import com.dev.admin.catalogo.domain.validation.Error;
 import java.util.List;
 
-public class DomainException extends RuntimeException {
+public class DomainException extends NoStackTraceException {
 
     protected final List<Error> errors;
 
